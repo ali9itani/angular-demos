@@ -1,0 +1,15 @@
+<div>
+	<button (click)="fetchRandomUser()">Get Random User</button>
+	<button (click)="requestWrongApi()">ٌRequest Wrong Api</button>
+</div>
+<div *ngIf="isLoading">
+  loading...
+</div>
+<br>
+<div *ngIf="userInfo != null">
+	<img [src]="userInfo.picture.medium" />
+</div>
+
+<div *ngIf="errorMessage" style="background-color: red; color: white;">
+  {{errorMessage}}
+</div>
