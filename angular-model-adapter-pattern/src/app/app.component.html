@@ -1,0 +1,13 @@
+<div *ngIf="user">
+	<img [src]="user.profilePhoto" styles="width: 100px; height: 100px" />
+	<br>
+	<span>Name: {{user.name}}</span>
+	<br>
+	<span>Age: {{user.age}}</span>
+	<br>
+	<span>Country: {{user.country}}</span>
+	<br>
+	<span>Register in: {{user.registeredDate | date}}</span>
+</div>
+<br>
+<button (click)="getNewRandomUser()" >Refresh </button>
