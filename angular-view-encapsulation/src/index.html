@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Angular App</title>
+  </head>
+  <body>
+  <my-app>loading</my-app>
+
+<ul>
+	<li>border/padding applied to all components using styles.css</li>
+	<li>
+		styling anchor in first child will not affect the one in parent component
+	</li>
+	<li>
+		using <b>:host</b> to style the first child html element (dashed red border)
+	</li>
+  <li>
+    using <b>:host a</b> in parent styles to style parent component anchors only
+  </li>
+  <li>
+    using <b>:host ::ng-deep a</b> in second child to style its anchors and its child anchors
+  </li>
+  <li>
+    using <b>::ng-deep a</b> in the second child child will style anchors in the whole app (ex: text-decoration)
+  </li>
+</ul>
+
+  </body>
+</html>
